@@ -229,7 +229,7 @@ d3.csv('./xundata2.csv', function(dataIn){
         .attr("class", "line")
         .attr("d", makeLine)
         .attr('fill','none')
-        .attr('stroke','#00264d')
+        .attr('stroke','grey')
         .attr('stroke-width',2.5);
 
 });
