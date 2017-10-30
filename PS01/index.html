@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Incorporate Final Project</title>
+    <title>Stock Comparison</title>
 
     <link rel="stylesheet" type="text/css" href="./libraries/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
 
-    <!-- Bootstrap JS is a JS library with pre-made functionality. Requires jQuery and popper.js to run.
-         JQuery is a very powerful, general-purpose library that can manipulate the DOM
-         Popper is a new positioning library for tooltips. It was annoying to integrate locally, so using a web link here.-->
+
     <script src="./libraries/jquery-3.2.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="./libraries/bootstrap.js"></script>
@@ -18,11 +16,30 @@
 
 <body>
 
-    <input type="range" min="1987" max="2007" value="1" class="slider" id="mySlider" oninput="sliderMoved(value)">
+    <input type="range" min="1" max="13" value="1" class="slider" id="mySlider" oninput="sliderMoved(value)">
 
     <br>
 
-    <svg width="800" height="600"></svg>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6 svgBox">
+
+                        <svg width="100%" height="100%" id="svg1"></svg>
+
+                    </div>
+                    <div class="col-md-6 svgBox">
+
+                        <svg width="100%" height="100%" id="svg2"></svg>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 </body>
 
