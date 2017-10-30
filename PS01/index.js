@@ -120,10 +120,10 @@ function drawPoints(pointData){
             svg2.selectAll('#' + currentID).attr('fill','lightblue')
         })
         .on('mouseout', function(d){
-            d3.select(this).attr('fill','slategray');
+            d3.select(this).attr('fill','#00264d');
 
             currentID = d3.select(this).attr('id');
-            svg2.selectAll('#' + currentID).attr('fill','slategray')
+            svg2.selectAll('#' + currentID).attr('fill','#00264d')
         });
 
 
@@ -178,10 +178,10 @@ function drawPoints(pointData){
             svg.selectAll('#' + currentID).attr('fill','lightblue')
         })
         .on('mouseout', function(d){
-            d3.select(this).attr('fill','slategray');
+            d3.select(this).attr('fill','#00264d');
 
             currentID = d3.select(this).attr('id');
-            svg.selectAll('#' + currentID).attr('fill','slategray')
+            svg.selectAll('#' + currentID).attr('fill','#00264d')
         });
 
 
